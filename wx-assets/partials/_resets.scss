@@ -1,0 +1,113 @@
+
+body {
+    font-family: $font-primary;
+    font-size: 14px;
+    
+}
+
+
+ul {
+    list-style: none;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+div,
+ul li,
+a {
+//    font-family: $font-secondary;
+    letter-spacing: inherit !important;
+}
+
+
+h1.vc_custom_heading,
+h2.vc_custom_heading,
+h3.vc_custom_heading,
+h4.vc_custom_heading,
+h5.vc_custom_heading
+{
+    font-family: $font-primary;
+    
+}
+
+p {
+    font-family: $font-primary;
+    color: $color-secondary;
+}
+
+.rounded {
+    @include border-radius(7px);
+}
+
+* {
+    @include transition(.3s);
+}
+
+
+
+.padding-reset {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.padding-left-reset {
+    padding-left: 0 !important;
+}
+
+.padding-right-reset {
+    padding-right: 0 !important;
+}
+
+
+.navbar-toggle {
+     .icon-bar {
+        background:$color-primary; 
+     }
+}
+
+h1 {
+    font-size:4em;
+}
+
+h2 {
+    font-size: 1.8em;
+    text-transform: uppercase;
+    font-weight:$bold;
+}
+
+.space-padding20 {
+    padding:20px 0 !important;
+}
+
+.fluid-container {
+    &::after {
+        display:block;
+        content:'';
+        clear:both;
+    }
+}
+
+.scroll-top {
+    display:none;
+}
+
+.scroll-top.scrolling {
+    display: block;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: 9;
+    color: $color-white;
+    padding: 5px 15px;
+    font-size: 2em;
+    background:$color-primary;
+
+    &:active {
+        outline:none;
+    }
+}
