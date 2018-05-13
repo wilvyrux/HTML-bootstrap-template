@@ -33,6 +33,9 @@ gulp.task('plugin-css', function(){
             'bower_components/owl.theme.default.css',
             'bower_components/font-awesome/css/font-awesome.css',
             'bower_components/bootstrap/dist/css/bootstrap.min.css',
+            'bower_components/animate.css/animate.css',
+            'bower_components/slick-carousel/slick/slick.css',
+            'bower_components/slick-carousel/slick/slick-theme.css',
         ];
     return gulp.src(sass_src)
         .pipe(sourcemaps.init())
@@ -54,6 +57,7 @@ gulp.task('plugin-js', function(){
         [
             'bower_components/owl.carousel/dist/owl.carousel.js',
             'bower_components/bootstrap/dist/js/bootstrap.min.js',
+            'bower_components/slick-carousel/slick/slick.min.js',
         ];
     return gulp.src(script_src)
         .pipe(sourcemaps.init())

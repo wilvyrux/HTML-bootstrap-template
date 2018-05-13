@@ -1,12 +1,10 @@
 header {
-	position: absolute;
 	width: 100%;
-	top: 1em;
 	left: 0;
-	z-index: 99;
+	background: $color-primary;
 
 	@media only screen and (max-width:800px) {
-		background:$color-dark; 
+		background:$color-dark;
 		top:0;
 	}
 
@@ -42,7 +40,7 @@ header {
 
 				 	&:hover,&:focus {
 				 		background:transparent;
-				 		color:$color-primary;
+				 		color:$color-secondary;
 
 				 		&::before {
 				 			display:block;
@@ -122,9 +120,9 @@ header {
 			background:$color-primary;
 		}
 	}
-	
 
 
-	
+
+
 
 }

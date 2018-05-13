@@ -4,16 +4,16 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Tekopia-Exam</title>
+    <title>WIlvyrux</title>
 
     <!-- Bootstrap -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/fontawesome-all.css" rel="stylesheet">
-    
-    <link href="css/main-custom-injection.min.css" rel="stylesheet">
-    
+    <!-- <link href="css/fontawesome-all.css" rel="stylesheet"> -->
 
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet"> 
+    <link href="css/main-custom-injection.min.css" rel="stylesheet">
+    <link href="css/wx-plugin.min.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -23,13 +23,13 @@
     <![endif]-->
 </head>
 <body>
-    
-    
+
+
     <div class="main-wrapper">
 
         <header id="home-scroll">
             <div class="fluid-container">
-               
+
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                       <span class="sr-only">Toggle navigation</span>
@@ -40,14 +40,14 @@
                     <a class="navbar-brand logo" href="#"> <img src="images/logo.png" alt="logo"></a>
                   </div>
                   <div id="navbar" class="navbar-collapse collapse">
-                    
+
 
                     <ul class="nav navbar-nav navbar-right account-tab">
                        <li><a href="../navbar-fixed-top/">Login </a></li>
                         <li><a href="../navbar-fixed-top/">Account </a></li>
                     </ul>
 
-                    <ul class="nav navbar-nav navbar-right">
+                    <ul class="nav navbar-nav navbar-center">
                       <li class="active"><a href="./">Start Your Search  <span class="sr-only">(current)</span></a></li>
                       <li><a href="../navbar-static-top/">Why Crossings</a></li>
                       <li><a href="../navbar-fixed-top/">How It Works </a></li>
@@ -56,7 +56,7 @@
 
 
 
-                    
+
                   </div><!--/.nav-collapse -->
 
 
@@ -64,27 +64,85 @@
         </header>
 
         <section class="content-wrapper">
-          content
+              <div class="main-wrapper">
+                  <div class="main-wrapper_left">
+                          <div class="main-wrapper_content heading flash">  hello </div>
+                          <ul>
+                              <li><i class="fa fa-address-book"></i></li>
+                              <li><i class="fa fa-address-card"></i></li>
+                              <li><i class="fa fa-adjust"></i></li>
+                          </ul>
+                  </div>
+
+              </div>
+
+              <div class="col-md-6">
+                    <div class="one-time">
+                            <div><img src="images/1.jpg"></div>
+                            <div><img src="images/2.jpg"></div>
+                            <div><img src="images/3.jpg"></div>
+                      </div>
+              </div>
+
+              <a href="#" class="primary-button"> button </a>
+
+
         </section>
 
-        <a href="#home-scroll" class="scroll-top"> <i class="fas fa-angle-up"></i> </a>
+        <a href="#home-scroll" class="scroll-top"> <i class="fa fa-angle-up"></i> go to top </a>
 
-                       
+
         <footer> footer   </footer>
-        
+
 
     </div>
- 
+
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 
+    <script src="js/wx-plugin.min.js"></script>
+
+<script>
+
+$('.one-time').slick({
+  dots: true,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 2,
+  adaptiveHeight: true
+});
+</script>
+
+
+
+<script>
+
+$('.sliders').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+})
+
+</script>
+
 
 <!-- scroll -->
     <script type="text/javascript">
-        
+
            // Select all links with hashes
             $('a[href*="#"]')
               // Remove links that don't actually link to anything
@@ -93,8 +151,8 @@
               .click(function(event) {
                 // On-page links
                 if (
-                  location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-                  && 
+                  location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+                  &&
                   location.hostname == this.hostname
                 ) {
                   // Figure out element to scroll to
@@ -127,7 +185,7 @@
 
 <!-- scroll add something -->
      <script>
-        jQuery(window).scroll(function() {    
+        jQuery(window).scroll(function() {
             var scroll = jQuery(window).scrollTop();
 
             if (scroll >= 50) {
@@ -137,7 +195,7 @@
             }
         });
     </script>
-    
+
 
 
 </body>
