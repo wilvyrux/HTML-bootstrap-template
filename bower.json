@@ -17,6 +17,9 @@
     "font-awesome": "fontawesome#^4.7.0",
     "bootstrap": "boostrap#^3.3.7",
     "animate.css": "^3.5.2",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "bootstrap-select": "^1.13.1",
+    "slick-lightbox": "^0.2.12",
+    "jquery": "^3.3.1"
   }
 }

@@ -36,6 +36,8 @@ gulp.task('plugin-css', function(){
             'bower_components/animate.css/animate.css',
             'bower_components/slick-carousel/slick/slick.css',
             'bower_components/slick-carousel/slick/slick-theme.css',
+            'bower_components/bootstrap-select/dist/css/bootstrap-select.min.css',
+            'bower_components/slick-lightbox/dist/slick-lightbox.css',
             'css/main-custom-injection.css',
         ];
     return gulp.src(sass_src)
@@ -60,6 +62,8 @@ gulp.task('plugin-js', function(){
             'bower_components/owl.carousel/dist/owl.carousel.js',
             'bower_components/bootstrap/dist/js/bootstrap.min.js',
             'bower_components/slick-carousel/slick/slick.min.js',
+            'bower_components/bootstrap-select/dist/js/bootstrap-select.min.js',
+            'bower_components/slick-lightbox/dist/slick-lightbox.min.js',
             'js/scripts_custom.js',
         ];
     return gulp.src(script_src)
@@ -105,6 +109,3 @@ gulp.task('sass:watch', function(){
 gulp.task('build', function(){
      gulp.run(['plugin-css','plugin-js','fonts','sass']);
 });
-
-
-

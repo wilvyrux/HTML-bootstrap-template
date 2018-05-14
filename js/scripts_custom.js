@@ -75,3 +75,13 @@ jQuery(window).scroll(function() {
         jQuery(".scroll-top").removeClass("scrolling");
     }
 });
+
+
+// bootstrap select
+$('.selectpicker').selectpicker({
+    style: 'btn-info',
+    size: 4
+  });
+
+
+  $('.default-demo').slickLightbox();
