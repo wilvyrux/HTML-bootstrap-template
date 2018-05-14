@@ -36,6 +36,7 @@ gulp.task('plugin-css', function(){
             'bower_components/animate.css/animate.css',
             'bower_components/slick-carousel/slick/slick.css',
             'bower_components/slick-carousel/slick/slick-theme.css',
+            'css/main-custom-injection.css',
         ];
     return gulp.src(sass_src)
         .pipe(sourcemaps.init())
@@ -58,6 +59,7 @@ gulp.task('plugin-js', function(){
             'bower_components/owl.carousel/dist/owl.carousel.js',
             'bower_components/bootstrap/dist/js/bootstrap.min.js',
             'bower_components/slick-carousel/slick/slick.min.js',
+            'js/scripts_custom.js',
         ];
     return gulp.src(script_src)
         .pipe(sourcemaps.init())
@@ -102,5 +104,6 @@ gulp.task('sass:watch', function(){
 gulp.task('build', function(){
      gulp.run(['plugin-css','plugin-js','fonts','sass']);
 });
+
 
 
