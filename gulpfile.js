@@ -56,6 +56,7 @@ gulp.task('plugin-css', function(){
 gulp.task('plugin-js', function(){
     var script_src =
         [
+            'bower_components/jquery/dist/jquery.min.js',
             'bower_components/owl.carousel/dist/owl.carousel.js',
             'bower_components/bootstrap/dist/js/bootstrap.min.js',
             'bower_components/slick-carousel/slick/slick.min.js',
